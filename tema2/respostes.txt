@@ -1,0 +1,19 @@
+a) Quines línies donen el mateix resultat als dos llocs?
+Les cinc primeres: 
+- 2 + 3
+- 'Hola' + ' món'
+- '2' + 3
+- 10 / 4
+- typeof 42
+
+b) Quina línia funciona al navegador i a Node dona error? Per què creus que hi falla?
+La línia "alert('Hola')". 
+Falla a Node perquè 'alert' és una eina del navegador (de l'objecte 'window') per mostrar finestres emergents. Node s'executa a la terminal, no té part gràfica i per això no sap què és.
+
+c) I quina funciona a Node i al navegador dona error?
+La línia "process.version". 
+Funciona a Node perquè 'process' és un objecte propi d'aquest entorn per controlar el sistema. El navegador no en té per motius de seguretat.
+
+d) Quin motor fa servir el teu navegador? I Node?
+- El meu navegador fa servir el motor V8 
+- Node.js fa servir sempre el motor V8 de Google.
